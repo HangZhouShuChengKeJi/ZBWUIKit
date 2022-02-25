@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZBWUIKit"
-  s.version      = "0.1.0"
+  s.version      = "0.2.1"
   s.summary      = "A short description of ZBWUIKit."
 
   # This description is used to generate tags and improve search results.
@@ -18,10 +18,10 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                    zbwuikit
+                    响应链上获取指定的vc。标签控件、格网控件等等。
                    DESC
 
-  s.homepage     = "http://EXAMPLE/ZBWUIKit"
+  s.homepage     = "https://github.com/HangZhouShuChengKeJi/ZBWUIKit"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -35,9 +35,9 @@ Pod::Spec.new do |s|
   s.license      = "BSD"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
-  s.author             = { "bwzhu" => "zhubw@taofen8.com" }
+  s.author             = { "bwzhu" => "bowen.zhu@91chengguo.com" }
 
-  s.source       = { :git => "git@gitlab.91chengguo.com:component-iOS/ZBWUIKit.git", :tag => "#{s.version}" }
+  s.source       = { :git => "git@github.com:HangZhouShuChengKeJi/ZBWUIKit.git", :tag => "#{s.version}" }
 
   s.platform     = :ios, "7.0"
 
@@ -57,14 +57,9 @@ Pod::Spec.new do |s|
     viewControllersSpec.source_files = "ZBWUIKit/ViewControllers/**/*.{h,m,mm}"
   end
 
-  s.subspec 'Signal' do |signalSpec|
-    signalSpec.source_files = "ZBWUIKit/Signal/*.*","ZBWUIKit/Signal/**/*.{h,m,mm}"
-  end
-
   s.subspec 'Category' do |categoryS|
     categoryS.source_files = "ZBWUIKit/Category/*.*","ZBWUIKit/Category/**/*.{h,m,mm}"
   end
-
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -80,9 +75,6 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   s.dependency "ZBWCategories"
-  s.dependency "Common-iOS"
-  s.dependency 'SDWebImage'
-  s.dependency 'libwebp', '0.6.1'
   s.dependency 'MJRefresh', '~> 3.1.12'
   s.dependency 'ZBWUISignal'
 

@@ -9,8 +9,6 @@
 #ifndef ZBWUIKit_prefix_h
 #define ZBWUIKit_prefix_h
 
-#import <ZBWMacroDefine/ZBWMacroDefine.h>
-#import <ZBWMacroDefine/ZBWBizMacroDefine.h>
 #import <ZBWCategories/ZBWCategories.h>
 #import "ZBWUIKit.h"
 

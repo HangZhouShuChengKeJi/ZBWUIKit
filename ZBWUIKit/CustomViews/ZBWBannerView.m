@@ -7,7 +7,6 @@
 //
 
 #import "ZBWBannerView.h"
-#import "ZBWGlobalTimer.h"
 #import "ZBWPageControlView.h"
 
 
@@ -36,6 +35,8 @@
     ZBWPageControlView *_pageControlView;
     BOOL _isStop;
 }
+
+@property (nonatomic, strong) NSTimer       *scrollTimer;
 
 @end
 
@@ -131,9 +132,9 @@
 - (void)begin
 {
     if (self.itemArray != nil && [self.itemArray count] == 1) {
-        [ZBWGlobalTimer removeTarget:self type:self.timeSecond];
+        [self stopTimer];
     } else {
-        [ZBWGlobalTimer addTarget:self selector:@selector(timeScroll) type:self.timeSecond];
+        [self startTimer];
     }
 }
 
@@ -182,7 +183,7 @@
 //scrollView 定时右滑
 - (void)timeScroll{
     if ([self zbw_outsideWithScreen]) {
-        [self stopTimer];
+//        [self stopTimer];
         return;
     }
     if (_scrollView.contentOffset.x == _scrollView.width) {
@@ -240,8 +241,21 @@
 //    NSLog(@"showCurrentIndex----%d",_currentIndex);
 }
 
-- (void)stopTimer{
-    [ZBWGlobalTimer removeTarget:self type:self.timeSecond];
+
+- (void)startTimer {
+    if (!_scrollTimer) {
+        _scrollTimer = [NSTimer scheduledTimerWithTimeInterval:self.timeSecond target:self selector:@selector(timeScroll) userInfo:nil repeats:YES];
+        
+        [[NSRunLoop currentRunLoop] addTimer:_scrollTimer forMode:NSRunLoopCommonModes];
+        [_scrollTimer fire];
+    }
+}
+
+- (void)stopTimer {
+    if (_scrollTimer && [_scrollTimer isValid]) {
+        [_scrollTimer invalidate];
+    }
+    _scrollTimer = NULL;
 }
 
 - (void)singleTapGestureRecognizer:(UIGestureRecognizer *)gestureRecognizer

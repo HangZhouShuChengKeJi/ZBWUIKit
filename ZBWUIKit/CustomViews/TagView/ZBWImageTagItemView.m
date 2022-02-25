@@ -20,19 +20,19 @@
 - (instancetype)initWithIdentify:(NSString *)identify {
     if (self = [super init]) {
         self.padding = UIEdgeInsetsMake(5, 5, 5, 5);
-        self.selectedBgColor = kZBW_Color_Orange;
-        self.selectedTextColor = kZBW_Color_White;
-        self.selectedFont = kZBW_Font_Micro;
-        self.selectedBorderColor = kZBW_Color_Orange;
+        self.selectedBgColor = [UIColor orangeColor];
+        self.selectedTextColor = [UIColor whiteColor];
+        self.selectedFont = [UIFont systemFontOfSize:13];
+        self.selectedBorderColor = [UIColor orangeColor];
         
-        self.normalBgColor = kZBW_Color_White;
-        self.normalTextColor = kZBW_Color_Orange;
-        self.normalFont = kZBW_Font_Micro;
-        self.normalBorderColor = kZBW_Color_Orange;
+        self.normalBgColor = [UIColor whiteColor];
+        self.normalTextColor = [UIColor orangeColor];
+        self.normalFont = [UIFont systemFontOfSize:13];
+        self.normalBorderColor = [UIColor orangeColor];
         
         objc_setAssociatedObject(self, ZBWTagItemView_Identify_Key, identify, OBJC_ASSOCIATION_COPY);
     }
-    self.frame = CGRectMake(0, 0, kZBW_SCREEN_WIDTH, 40);
+    self.frame = CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 40);
     [self addSubview:self.imageView];
     [self addSubview:self.titleLabel];
     

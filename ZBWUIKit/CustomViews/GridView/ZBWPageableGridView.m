@@ -221,7 +221,7 @@
 - (UIView *)pageView {
     if (!_pageView) {
         _pageView = [[UIView alloc] initWithFrame:CGRectMake(0, self.height - kZBWPageableGridView_PageViewHeight, self.width, kZBWPageableGridView_PageViewHeight)];
-        _pageView.backgroundColor = kZBW_Color_Clear;
+        _pageView.backgroundColor = [UIColor clearColor];
         
         [_pageView addSubview:self.pageControlView];
     }

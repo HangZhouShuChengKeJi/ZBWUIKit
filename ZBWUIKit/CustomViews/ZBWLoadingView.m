@@ -17,6 +17,8 @@
 #define ZBWLoadingView_Color_Light [[UIColor blackColor] colorWithAlphaComponent:0.1]
 #define ZBWLoadingView_Color_Dark [[UIColor blackColor] colorWithAlphaComponent:0.1]
 
+#define ZBWLoadingView_DEGREES_TO_RADIANS(angle) ((angle) / 180.0 * M_PI)
+
 /**
  *  自定义Layer
  */
@@ -55,7 +57,7 @@
     CGFloat width = CGRectGetWidth(rect);
     float startAngle = (self.rotationAngle - 90) - (_progress * 360) / 2;
     float endAngle = (self.rotationAngle - 90) + (_progress * 360) / 2;
-    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(CGRectGetMidX(rect), CGRectGetMidY(rect)) radius:(width - self.lineWidth) / 2 startAngle:kZBW_DEGREES_TO_RADIANS(startAngle) endAngle:kZBW_DEGREES_TO_RADIANS(endAngle) clockwise:YES];
+    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(CGRectGetMidX(rect), CGRectGetMidY(rect)) radius:(width - self.lineWidth) / 2 startAngle:ZBWLoadingView_DEGREES_TO_RADIANS(startAngle) endAngle:ZBWLoadingView_DEGREES_TO_RADIANS(endAngle) clockwise:YES];
 
     CGContextSaveGState(ctx);
     CGContextSetStrokeColorWithColor(ctx, self.lineColor.CGColor);
@@ -249,8 +251,8 @@ static UIColor *s_bgColor;
     
     
     CABasicAnimation *rotationAnimation1 = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-    rotationAnimation1.fromValue = [NSNumber numberWithFloat:kZBW_DEGREES_TO_RADIANS(self.rotationAngle)];
-    rotationAnimation1.toValue = [NSNumber numberWithFloat:kZBW_DEGREES_TO_RADIANS(self.rotationAngle - 180)];
+    rotationAnimation1.fromValue = [NSNumber numberWithFloat:ZBWLoadingView_DEGREES_TO_RADIANS(self.rotationAngle)];
+    rotationAnimation1.toValue = [NSNumber numberWithFloat:ZBWLoadingView_DEGREES_TO_RADIANS(self.rotationAngle - 180)];
     rotationAnimation1.repeatCount = INT32_MAX;
     rotationAnimation1.autoreverses = YES;
     rotationAnimation1.duration = self.duration;
@@ -258,8 +260,8 @@ static UIColor *s_bgColor;
     [self.circleLayer1 addAnimation:rotationAnimation1 forKey:nil];
     
     CABasicAnimation *rotationAnimation2 = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-    rotationAnimation2.fromValue = [NSNumber numberWithFloat:kZBW_DEGREES_TO_RADIANS(self.rotationAngle)];
-    rotationAnimation2.toValue = [NSNumber numberWithFloat:kZBW_DEGREES_TO_RADIANS(self.rotationAngle + 180)];
+    rotationAnimation2.fromValue = [NSNumber numberWithFloat:ZBWLoadingView_DEGREES_TO_RADIANS(self.rotationAngle)];
+    rotationAnimation2.toValue = [NSNumber numberWithFloat:ZBWLoadingView_DEGREES_TO_RADIANS(self.rotationAngle + 180)];
     rotationAnimation2.repeatCount = INT32_MAX;
     rotationAnimation2.autoreverses = YES;
     rotationAnimation2.duration = self.duration;
@@ -287,7 +289,7 @@ static UIColor *s_bgColor;
     {
         CGRect rect = self.bounds;
         CGFloat width = CGRectGetWidth(rect);
-        _path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(CGRectGetMidX(rect), CGRectGetMidY(rect)) radius:(width - self.lineWidth) / 2 startAngle:kZBW_DEGREES_TO_RADIANS(self.rotationAngle - 90) endAngle:kZBW_DEGREES_TO_RADIANS(360 + (self.rotationAngle - 90)) clockwise:YES];
+        _path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(CGRectGetMidX(rect), CGRectGetMidY(rect)) radius:(width - self.lineWidth) / 2 startAngle:ZBWLoadingView_DEGREES_TO_RADIANS(self.rotationAngle - 90) endAngle:ZBWLoadingView_DEGREES_TO_RADIANS(360 + (self.rotationAngle - 90)) clockwise:YES];
     }
     return _path;
 }

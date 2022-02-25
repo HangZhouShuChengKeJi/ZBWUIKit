@@ -42,7 +42,7 @@ const void *ZBWTagItemView_Identify_Key = &ZBWTagItemView_Identify_Key;
     CGContextMoveToPoint(context, 0, CGRectGetMaxY(rect));
     CGContextAddLineToPoint(context, CGRectGetMaxX(rect), 0);
     CGContextSetLineWidth(context, 1);
-    CGContextSetStrokeColorWithColor(context, kZBW_Color_White.CGColor);
+    CGContextSetStrokeColorWithColor(context, [UIColor whiteColor].CGColor);
     CGContextStrokePath(context);
 }
 
@@ -62,20 +62,20 @@ const void *ZBWTagItemView_Identify_Key = &ZBWTagItemView_Identify_Key;
 - (instancetype)initWithIdentify:(NSString *)identify {
     if (self = [super init]) {
         self.padding = UIEdgeInsetsMake(5, 5, 5, 5);
-        self.selectedBgColor = kZBW_Color_Orange;
-        self.selectedTextColor = kZBW_Color_White;
-        self.selectedFont = kZBW_Font_Micro;
-        self.selectedBorderColor = kZBW_Color_Orange;
+        self.selectedBgColor = [UIColor orangeColor];
+        self.selectedTextColor = [UIColor whiteColor];
+        self.selectedFont = [UIFont systemFontOfSize:13];
+        self.selectedBorderColor = [UIColor orangeColor];
         
-        self.normalBgColor = kZBW_Color_White;
-        self.normalTextColor = kZBW_Color_Orange;
-        self.normalFont = kZBW_Font_Micro;
-        self.normalBorderColor = kZBW_Color_Orange;
+        self.normalBgColor = [UIColor whiteColor];
+        self.normalTextColor = [UIColor orangeColor];
+        self.normalFont = [UIFont systemFontOfSize:13];
+        self.normalBorderColor = [UIColor orangeColor];
         
         objc_setAssociatedObject(self, ZBWTagItemView_Identify_Key, identify, OBJC_ASSOCIATION_COPY);
     }
     [self addSubview:self.contentBtn];
-    self.frame = CGRectMake(0, 0, kZBW_SCREEN_WIDTH, 40);
+    self.frame = CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 40);
     
     self.style = _style;
 //    [self updateUI];
@@ -205,7 +205,7 @@ const void *ZBWTagItemView_Identify_Key = &ZBWTagItemView_Identify_Key;
 - (CGSize)sizeThatFits:(CGSize)size {
 //    CGFloat height = [@"全" boundingRectWithSize:CGRectMake(0, 0, 100, 30).size options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : kZBW_Font_Small} context:nil].size.height;
     
-    CGSize aSize = [self.contentBtn sizeThatFits:CGSizeMake(kZBW_SCREEN_WIDTH, kZBW_SCREEN_HEIGHT)];
+    CGSize aSize = [self.contentBtn sizeThatFits:[[UIScreen mainScreen] bounds].size];
     aSize.width += 10*2;
     aSize.height += (self.padding.top + self.padding.bottom);
     aSize.width += (self.padding.left + self.padding.right);

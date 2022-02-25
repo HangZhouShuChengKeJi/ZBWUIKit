@@ -202,7 +202,7 @@ const void *UIViewController_ZBWSegmentIndex_Key = &UIViewController_ZBWSegmentI
 - (void)setOffsetY:(float)offsetY animation:(BOOL)animation {
     self.offsetY = offsetY;
     
-    __weakSelf
+    __weak typeof(self) __weakedSelf = self;
     if (animation) {
         [UIView animateWithDuration:.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
             [__weakedSelf updateUI];

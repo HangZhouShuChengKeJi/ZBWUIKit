@@ -15,6 +15,8 @@ static const void *UIView$ZBWLVBgView_Key                              = &UIView
 
 static const void *UIView$ZBWLVNSOperation_Key                         = &UIView$ZBWLVNSOperation_Key;
 
+#define LV_DefaultOffsetY       50
+
 @implementation UIView (ZBWLoadingView)
 
 - (NSOperation *)zbwDelayOperation {
@@ -68,8 +70,8 @@ static const void *UIView$ZBWLVNSOperation_Key                         = &UIView
             self.zbw_lv_tipLabel = [[UILabel alloc] init];
             self.zbw_lv_tipLabel.numberOfLines = 0;
             self.zbw_lv_tipLabel.textAlignment = NSTextAlignmentCenter;
-            self.zbw_lv_tipLabel.font = kZBW_Font_Mid_2;
-            self.zbw_lv_tipLabel.textColor = kZBW_Color_White;
+            self.zbw_lv_tipLabel.font = [UIFont systemFontOfSize:16];
+            self.zbw_lv_tipLabel.textColor = [UIColor whiteColor];
             self.zbw_lv_tipLabel.backgroundColor = [UIColor clearColor];
         }
         self.zbw_lv_tipLabel.text = tipStr;

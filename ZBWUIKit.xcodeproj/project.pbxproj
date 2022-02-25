@@ -18,11 +18,12 @@
 		8C113EC72249DDED00E26866 /* ZBWGridCellButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EA42249DDED00E26866 /* ZBWGridCellButton.m */; };
 		8C113EC82249DDED00E26866 /* ZBWGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EA62249DDED00E26866 /* ZBWGridCell.m */; };
 		8C113EC92249DDED00E26866 /* ZBWPageableGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EAA2249DDED00E26866 /* ZBWPageableGridView.m */; };
-		8C113ECA2249DDED00E26866 /* TagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EAF2249DDED00E26866 /* TagView.m */; };
-		8C113ECB2249DDED00E26866 /* TagItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EB02249DDED00E26866 /* TagItemView.m */; };
 		8C113ECC2249DDED00E26866 /* UITableView+ZBWAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EB32249DDED00E26866 /* UITableView+ZBWAddition.m */; };
 		8C113ECD2249DDED00E26866 /* ZBWPageControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EB42249DDED00E26866 /* ZBWPageControlView.m */; };
 		8C113ECE2249DDED00E26866 /* ZBWSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EB92249DDED00E26866 /* ZBWSegmentViewController.m */; };
+		8CABC13F27C8D3830034CAE6 /* ZBWTagItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CABC13927C8D3830034CAE6 /* ZBWTagItemView.m */; };
+		8CABC14027C8D3830034CAE6 /* ZBWImageTagItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CABC13B27C8D3830034CAE6 /* ZBWImageTagItemView.m */; };
+		8CABC14127C8D3830034CAE6 /* ZBWTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CABC13D27C8D3830034CAE6 /* ZBWTagView.m */; };
 		FE67D7737D186214B56F81DA /* libPods-ZBWUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7036C14F00FAC0F54F3B0A2C /* libPods-ZBWUIKit.a */; };
 /* End PBXBuildFile section */
 
@@ -66,10 +67,6 @@
 		8C113EAB2249DDED00E26866 /* UIView+ZBWLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZBWLoadingView.h"; sourceTree = "<group>"; };
 		8C113EAC2249DDED00E26866 /* ZBWLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWLoadingView.h; sourceTree = "<group>"; };
 		8C113EAD2249DDED00E26866 /* ZBWBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWBannerView.h; sourceTree = "<group>"; };
-		8C113EAF2249DDED00E26866 /* TagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagView.m; sourceTree = "<group>"; };
-		8C113EB02249DDED00E26866 /* TagItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagItemView.m; sourceTree = "<group>"; };
-		8C113EB12249DDED00E26866 /* TagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagView.h; sourceTree = "<group>"; };
-		8C113EB22249DDED00E26866 /* TagItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagItemView.h; sourceTree = "<group>"; };
 		8C113EB32249DDED00E26866 /* UITableView+ZBWAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+ZBWAddition.m"; sourceTree = "<group>"; };
 		8C113EB42249DDED00E26866 /* ZBWPageControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWPageControlView.m; sourceTree = "<group>"; };
 		8C113EB52249DDED00E26866 /* ZBWPhoneNumTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWPhoneNumTextField.h; sourceTree = "<group>"; };
@@ -77,6 +74,12 @@
 		8C113EB72249DDED00E26866 /* ZBWUIKit-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZBWUIKit-prefix.pch"; sourceTree = "<group>"; };
 		8C113EB92249DDED00E26866 /* ZBWSegmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWSegmentViewController.m; sourceTree = "<group>"; };
 		8C113EBA2249DDED00E26866 /* ZBWSegmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWSegmentViewController.h; sourceTree = "<group>"; };
+		8CABC13927C8D3830034CAE6 /* ZBWTagItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWTagItemView.m; sourceTree = "<group>"; };
+		8CABC13A27C8D3830034CAE6 /* ZBWImageTagItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWImageTagItemView.h; sourceTree = "<group>"; };
+		8CABC13B27C8D3830034CAE6 /* ZBWImageTagItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWImageTagItemView.m; sourceTree = "<group>"; };
+		8CABC13C27C8D3830034CAE6 /* ZBWTagItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWTagItemView.h; sourceTree = "<group>"; };
+		8CABC13D27C8D3830034CAE6 /* ZBWTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWTagView.m; sourceTree = "<group>"; };
+		8CABC13E27C8D3830034CAE6 /* ZBWTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWTagView.h; sourceTree = "<group>"; };
 		F83E43037E3570B89FC96C59 /* Pods-ZBWUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBWUIKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZBWUIKit/Pods-ZBWUIKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -182,10 +185,12 @@
 		8C113EAE2249DDED00E26866 /* TagView */ = {
 			isa = PBXGroup;
 			children = (
-				8C113EAF2249DDED00E26866 /* TagView.m */,
-				8C113EB02249DDED00E26866 /* TagItemView.m */,
-				8C113EB12249DDED00E26866 /* TagView.h */,
-				8C113EB22249DDED00E26866 /* TagItemView.h */,
+				8CABC13A27C8D3830034CAE6 /* ZBWImageTagItemView.h */,
+				8CABC13B27C8D3830034CAE6 /* ZBWImageTagItemView.m */,
+				8CABC13C27C8D3830034CAE6 /* ZBWTagItemView.h */,
+				8CABC13927C8D3830034CAE6 /* ZBWTagItemView.m */,
+				8CABC13E27C8D3830034CAE6 /* ZBWTagView.h */,
+				8CABC13D27C8D3830034CAE6 /* ZBWTagView.m */,
 			);
 			path = TagView;
 			sourceTree = "<group>";
@@ -313,18 +318,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CABC14027C8D3830034CAE6 /* ZBWImageTagItemView.m in Sources */,
+				8CABC14127C8D3830034CAE6 /* ZBWTagView.m in Sources */,
 				8C113EC42249DDED00E26866 /* ZBWSegmentView.m in Sources */,
 				8C113ECE2249DDED00E26866 /* ZBWSegmentViewController.m in Sources */,
-				8C113ECB2249DDED00E26866 /* TagItemView.m in Sources */,
 				8C113EC12249DDED00E26866 /* ZBWLoadingView.m in Sources */,
 				8C113EC62249DDED00E26866 /* ZBWGridView.m in Sources */,
 				8C113EC02249DDED00E26866 /* UIView+ZBWLoadingView.m in Sources */,
 				8C113ECC2249DDED00E26866 /* UITableView+ZBWAddition.m in Sources */,
+				8CABC13F27C8D3830034CAE6 /* ZBWTagItemView.m in Sources */,
 				8C113EC72249DDED00E26866 /* ZBWGridCellButton.m in Sources */,
 				8C113ECD2249DDED00E26866 /* ZBWPageControlView.m in Sources */,
 				8C113EC32249DDED00E26866 /* ZBWPhoneNumTextField.m in Sources */,
 				8C113EC92249DDED00E26866 /* ZBWPageableGridView.m in Sources */,
-				8C113ECA2249DDED00E26866 /* TagView.m in Sources */,
 				8C113EC22249DDED00E26866 /* ZBWBannerView.m in Sources */,
 				8C113EC82249DDED00E26866 /* ZBWGridCell.m in Sources */,
 				8C113EBB2249DDED00E26866 /* UIResponder+ZBWStack.m in Sources */,
