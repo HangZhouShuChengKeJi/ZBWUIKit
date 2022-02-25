@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C113E822249DCFD00E26866 /* ZBWUIKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8C113E7F2249DCFD00E26866 /* ZBWUIKit.h */; };
+		8C113EBB2249DDED00E26866 /* UIResponder+ZBWStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113E8A2249DDED00E26866 /* UIResponder+ZBWStack.m */; };
+		8C113EC02249DDED00E26866 /* UIView+ZBWLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113E982249DDED00E26866 /* UIView+ZBWLoadingView.m */; };
+		8C113EC12249DDED00E26866 /* ZBWLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113E9A2249DDED00E26866 /* ZBWLoadingView.m */; };
+		8C113EC22249DDED00E26866 /* ZBWBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113E9B2249DDED00E26866 /* ZBWBannerView.m */; };
+		8C113EC32249DDED00E26866 /* ZBWPhoneNumTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113E9C2249DDED00E26866 /* ZBWPhoneNumTextField.m */; };
+		8C113EC42249DDED00E26866 /* ZBWSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EA02249DDED00E26866 /* ZBWSegmentView.m */; };
+		8C113EC62249DDED00E26866 /* ZBWGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EA32249DDED00E26866 /* ZBWGridView.m */; };
+		8C113EC72249DDED00E26866 /* ZBWGridCellButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EA42249DDED00E26866 /* ZBWGridCellButton.m */; };
+		8C113EC82249DDED00E26866 /* ZBWGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EA62249DDED00E26866 /* ZBWGridCell.m */; };
+		8C113EC92249DDED00E26866 /* ZBWPageableGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EAA2249DDED00E26866 /* ZBWPageableGridView.m */; };
+		8C113ECA2249DDED00E26866 /* TagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EAF2249DDED00E26866 /* TagView.m */; };
+		8C113ECB2249DDED00E26866 /* TagItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EB02249DDED00E26866 /* TagItemView.m */; };
+		8C113ECC2249DDED00E26866 /* UITableView+ZBWAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EB32249DDED00E26866 /* UITableView+ZBWAddition.m */; };
+		8C113ECD2249DDED00E26866 /* ZBWPageControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EB42249DDED00E26866 /* ZBWPageControlView.m */; };
+		8C113ECE2249DDED00E26866 /* ZBWSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EB92249DDED00E26866 /* ZBWSegmentViewController.m */; };
+		FE67D7737D186214B56F81DA /* libPods-ZBWUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7036C14F00FAC0F54F3B0A2C /* libPods-ZBWUIKit.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8C113E7A2249DCFD00E26866 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				8C113E822249DCFD00E26866 /* ZBWUIKit.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0EB0BCBF3D5FA5EC511F886D /* Pods-ZBWUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBWUIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZBWUIKit/Pods-ZBWUIKit.release.xcconfig"; sourceTree = "<group>"; };
+		7036C14F00FAC0F54F3B0A2C /* libPods-ZBWUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZBWUIKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C113E7C2249DCFD00E26866 /* libZBWUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZBWUIKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C113E7F2249DCFD00E26866 /* ZBWUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBWUIKit.h; sourceTree = "<group>"; };
+		8C113E8A2249DDED00E26866 /* UIResponder+ZBWStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+ZBWStack.m"; sourceTree = "<group>"; };
+		8C113E8B2249DDED00E26866 /* ZBWUIKit+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZBWUIKit+Category.h"; sourceTree = "<group>"; };
+		8C113E8C2249DDED00E26866 /* UIResponder+ZBWStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+ZBWStack.h"; sourceTree = "<group>"; };
+		8C113E982249DDED00E26866 /* UIView+ZBWLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZBWLoadingView.m"; sourceTree = "<group>"; };
+		8C113E9A2249DDED00E26866 /* ZBWLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWLoadingView.m; sourceTree = "<group>"; };
+		8C113E9B2249DDED00E26866 /* ZBWBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWBannerView.m; sourceTree = "<group>"; };
+		8C113E9C2249DDED00E26866 /* ZBWPhoneNumTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWPhoneNumTextField.m; sourceTree = "<group>"; };
+		8C113E9D2249DDED00E26866 /* ZBWPageControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWPageControlView.h; sourceTree = "<group>"; };
+		8C113E9E2249DDED00E26866 /* ZBWCustomViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWCustomViews.h; sourceTree = "<group>"; };
+		8C113E9F2249DDED00E26866 /* UITableView+ZBWAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+ZBWAddition.h"; sourceTree = "<group>"; };
+		8C113EA02249DDED00E26866 /* ZBWSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWSegmentView.m; sourceTree = "<group>"; };
+		8C113EA32249DDED00E26866 /* ZBWGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWGridView.m; sourceTree = "<group>"; };
+		8C113EA42249DDED00E26866 /* ZBWGridCellButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWGridCellButton.m; sourceTree = "<group>"; };
+		8C113EA52249DDED00E26866 /* ZBWPageableGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWPageableGridView.h; sourceTree = "<group>"; };
+		8C113EA62249DDED00E26866 /* ZBWGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWGridCell.m; sourceTree = "<group>"; };
+		8C113EA72249DDED00E26866 /* ZBWGridCellButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWGridCellButton.h; sourceTree = "<group>"; };
+		8C113EA82249DDED00E26866 /* ZBWGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWGridView.h; sourceTree = "<group>"; };
+		8C113EA92249DDED00E26866 /* ZBWGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWGridCell.h; sourceTree = "<group>"; };
+		8C113EAA2249DDED00E26866 /* ZBWPageableGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWPageableGridView.m; sourceTree = "<group>"; };
+		8C113EAB2249DDED00E26866 /* UIView+ZBWLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZBWLoadingView.h"; sourceTree = "<group>"; };
+		8C113EAC2249DDED00E26866 /* ZBWLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWLoadingView.h; sourceTree = "<group>"; };
+		8C113EAD2249DDED00E26866 /* ZBWBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWBannerView.h; sourceTree = "<group>"; };
+		8C113EAF2249DDED00E26866 /* TagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagView.m; sourceTree = "<group>"; };
+		8C113EB02249DDED00E26866 /* TagItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagItemView.m; sourceTree = "<group>"; };
+		8C113EB12249DDED00E26866 /* TagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagView.h; sourceTree = "<group>"; };
+		8C113EB22249DDED00E26866 /* TagItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagItemView.h; sourceTree = "<group>"; };
+		8C113EB32249DDED00E26866 /* UITableView+ZBWAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+ZBWAddition.m"; sourceTree = "<group>"; };
+		8C113EB42249DDED00E26866 /* ZBWPageControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWPageControlView.m; sourceTree = "<group>"; };
+		8C113EB52249DDED00E26866 /* ZBWPhoneNumTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWPhoneNumTextField.h; sourceTree = "<group>"; };
+		8C113EB62249DDED00E26866 /* ZBWSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWSegmentView.h; sourceTree = "<group>"; };
+		8C113EB72249DDED00E26866 /* ZBWUIKit-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZBWUIKit-prefix.pch"; sourceTree = "<group>"; };
+		8C113EB92249DDED00E26866 /* ZBWSegmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWSegmentViewController.m; sourceTree = "<group>"; };
+		8C113EBA2249DDED00E26866 /* ZBWSegmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWSegmentViewController.h; sourceTree = "<group>"; };
+		F83E43037E3570B89FC96C59 /* Pods-ZBWUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBWUIKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZBWUIKit/Pods-ZBWUIKit.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C113E792249DCFD00E26866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE67D7737D186214B56F81DA /* libPods-ZBWUIKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C113E732249DCFD00E26866 = {
+			isa = PBXGroup;
+			children = (
+				8C113E7E2249DCFD00E26866 /* ZBWUIKit */,
+				8C113E7D2249DCFD00E26866 /* Products */,
+				BB30E84F97D625E35939E570 /* Pods */,
+				9823D0728633EB030D2D127D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8C113E7D2249DCFD00E26866 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C113E7C2249DCFD00E26866 /* libZBWUIKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C113E7E2249DCFD00E26866 /* ZBWUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				8C113E882249DDED00E26866 /* Category */,
+				8C113E972249DDED00E26866 /* CustomViews */,
+				8C113EB72249DDED00E26866 /* ZBWUIKit-prefix.pch */,
+				8C113EB82249DDED00E26866 /* ViewControllers */,
+				8C113E7F2249DCFD00E26866 /* ZBWUIKit.h */,
+			);
+			path = ZBWUIKit;
+			sourceTree = "<group>";
+		};
+		8C113E882249DDED00E26866 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				8C113E892249DDED00E26866 /* UIKit+Category */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		8C113E892249DDED00E26866 /* UIKit+Category */ = {
+			isa = PBXGroup;
+			children = (
+				8C113E8A2249DDED00E26866 /* UIResponder+ZBWStack.m */,
+				8C113E8B2249DDED00E26866 /* ZBWUIKit+Category.h */,
+				8C113E8C2249DDED00E26866 /* UIResponder+ZBWStack.h */,
+			);
+			path = "UIKit+Category";
+			sourceTree = "<group>";
+		};
+		8C113E972249DDED00E26866 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				8C113EA22249DDED00E26866 /* GridView */,
+				8C113EAC2249DDED00E26866 /* ZBWLoadingView.h */,
+				8C113E9A2249DDED00E26866 /* ZBWLoadingView.m */,
+				8C113EAE2249DDED00E26866 /* TagView */,
+				8C113E9F2249DDED00E26866 /* UITableView+ZBWAddition.h */,
+				8C113EB32249DDED00E26866 /* UITableView+ZBWAddition.m */,
+				8C113EAB2249DDED00E26866 /* UIView+ZBWLoadingView.h */,
+				8C113E982249DDED00E26866 /* UIView+ZBWLoadingView.m */,
+				8C113EAD2249DDED00E26866 /* ZBWBannerView.h */,
+				8C113E9B2249DDED00E26866 /* ZBWBannerView.m */,
+				8C113E9E2249DDED00E26866 /* ZBWCustomViews.h */,
+				8C113E9D2249DDED00E26866 /* ZBWPageControlView.h */,
+				8C113EB42249DDED00E26866 /* ZBWPageControlView.m */,
+				8C113EB52249DDED00E26866 /* ZBWPhoneNumTextField.h */,
+				8C113E9C2249DDED00E26866 /* ZBWPhoneNumTextField.m */,
+				8C113EB62249DDED00E26866 /* ZBWSegmentView.h */,
+				8C113EA02249DDED00E26866 /* ZBWSegmentView.m */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		8C113EA22249DDED00E26866 /* GridView */ = {
+			isa = PBXGroup;
+			children = (
+				8C113EA32249DDED00E26866 /* ZBWGridView.m */,
+				8C113EA42249DDED00E26866 /* ZBWGridCellButton.m */,
+				8C113EA52249DDED00E26866 /* ZBWPageableGridView.h */,
+				8C113EA62249DDED00E26866 /* ZBWGridCell.m */,
+				8C113EA72249DDED00E26866 /* ZBWGridCellButton.h */,
+				8C113EA82249DDED00E26866 /* ZBWGridView.h */,
+				8C113EA92249DDED00E26866 /* ZBWGridCell.h */,
+				8C113EAA2249DDED00E26866 /* ZBWPageableGridView.m */,
+			);
+			path = GridView;
+			sourceTree = "<group>";
+		};
+		8C113EAE2249DDED00E26866 /* TagView */ = {
+			isa = PBXGroup;
+			children = (
+				8C113EAF2249DDED00E26866 /* TagView.m */,
+				8C113EB02249DDED00E26866 /* TagItemView.m */,
+				8C113EB12249DDED00E26866 /* TagView.h */,
+				8C113EB22249DDED00E26866 /* TagItemView.h */,
+			);
+			path = TagView;
+			sourceTree = "<group>";
+		};
+		8C113EB82249DDED00E26866 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8C113EB92249DDED00E26866 /* ZBWSegmentViewController.m */,
+				8C113EBA2249DDED00E26866 /* ZBWSegmentViewController.h */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9823D0728633EB030D2D127D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7036C14F00FAC0F54F3B0A2C /* libPods-ZBWUIKit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB30E84F97D625E35939E570 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F83E43037E3570B89FC96C59 /* Pods-ZBWUIKit.debug.xcconfig */,
+				0EB0BCBF3D5FA5EC511F886D /* Pods-ZBWUIKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C113E7B2249DCFD00E26866 /* ZBWUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C113E852249DCFD00E26866 /* Build configuration list for PBXNativeTarget "ZBWUIKit" */;
+			buildPhases = (
+				7BBC934BE9511CF2BEF733B4 /* [CP] Check Pods Manifest.lock */,
+				8C113E782249DCFD00E26866 /* Sources */,
+				8C113E792249DCFD00E26866 /* Frameworks */,
+				8C113E7A2249DCFD00E26866 /* CopyFiles */,
+				DC2404A55202CB695BAA63C9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZBWUIKit;
+			productName = ZBWUIKit;
+			productReference = 8C113E7C2249DCFD00E26866 /* libZBWUIKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C113E742249DCFD00E26866 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "朱博文";
+				TargetAttributes = {
+					8C113E7B2249DCFD00E26866 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 8C113E772249DCFD00E26866 /* Build configuration list for PBXProject "ZBWUIKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8C113E732249DCFD00E26866;
+			productRefGroup = 8C113E7D2249DCFD00E26866 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C113E7B2249DCFD00E26866 /* ZBWUIKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7BBC934BE9511CF2BEF733B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZBWUIKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC2404A55202CB695BAA63C9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZBWUIKit/Pods-ZBWUIKit-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZBWUIKit/Pods-ZBWUIKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C113E782249DCFD00E26866 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C113EC42249DDED00E26866 /* ZBWSegmentView.m in Sources */,
+				8C113ECE2249DDED00E26866 /* ZBWSegmentViewController.m in Sources */,
+				8C113ECB2249DDED00E26866 /* TagItemView.m in Sources */,
+				8C113EC12249DDED00E26866 /* ZBWLoadingView.m in Sources */,
+				8C113EC62249DDED00E26866 /* ZBWGridView.m in Sources */,
+				8C113EC02249DDED00E26866 /* UIView+ZBWLoadingView.m in Sources */,
+				8C113ECC2249DDED00E26866 /* UITableView+ZBWAddition.m in Sources */,
+				8C113EC72249DDED00E26866 /* ZBWGridCellButton.m in Sources */,
+				8C113ECD2249DDED00E26866 /* ZBWPageControlView.m in Sources */,
+				8C113EC32249DDED00E26866 /* ZBWPhoneNumTextField.m in Sources */,
+				8C113EC92249DDED00E26866 /* ZBWPageableGridView.m in Sources */,
+				8C113ECA2249DDED00E26866 /* TagView.m in Sources */,
+				8C113EC22249DDED00E26866 /* ZBWBannerView.m in Sources */,
+				8C113EC82249DDED00E26866 /* ZBWGridCell.m in Sources */,
+				8C113EBB2249DDED00E26866 /* UIResponder+ZBWStack.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8C113E832249DCFD00E26866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8C113E842249DCFD00E26866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C113E862249DCFD00E26866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F83E43037E3570B89FC96C59 /* Pods-ZBWUIKit.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SZRFDMPH3R;
+				GCC_PREFIX_HEADER = "ZBWUIKit/ZBWUIKit-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C113E872249DCFD00E26866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EB0BCBF3D5FA5EC511F886D /* Pods-ZBWUIKit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SZRFDMPH3R;
+				GCC_PREFIX_HEADER = "ZBWUIKit/ZBWUIKit-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C113E772249DCFD00E26866 /* Build configuration list for PBXProject "ZBWUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C113E832249DCFD00E26866 /* Debug */,
+				8C113E842249DCFD00E26866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C113E852249DCFD00E26866 /* Build configuration list for PBXNativeTarget "ZBWUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C113E862249DCFD00E26866 /* Debug */,
+				8C113E872249DCFD00E26866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C113E742249DCFD00E26866 /* Project object */;
+}

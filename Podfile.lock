@@ -1,0 +1,90 @@
+PODS:
+  - Common-iOS (0.0.1):
+    - libwebp (= 0.6.1)
+    - ZBWCategories
+    - ZBWMacroDefine/biz (~> 0.1.2)
+  - libwebp (0.6.1):
+    - libwebp/core (= 0.6.1)
+    - libwebp/dec (= 0.6.1)
+    - libwebp/demux (= 0.6.1)
+    - libwebp/dsp (= 0.6.1)
+    - libwebp/enc (= 0.6.1)
+    - libwebp/mux (= 0.6.1)
+    - libwebp/utils (= 0.6.1)
+    - libwebp/webp (= 0.6.1)
+  - libwebp/core (0.6.1):
+    - libwebp/webp
+  - libwebp/dec (0.6.1):
+    - libwebp/core
+  - libwebp/demux (0.6.1):
+    - libwebp/core
+  - libwebp/dsp (0.6.1):
+    - libwebp/core
+  - libwebp/enc (0.6.1):
+    - libwebp/core
+  - libwebp/mux (0.6.1):
+    - libwebp/core
+  - libwebp/utils (0.6.1):
+    - libwebp/core
+  - libwebp/webp (0.6.1)
+  - MJRefresh (3.1.17)
+  - SDWebImage (5.10.2):
+    - SDWebImage/Core (= 5.10.2)
+  - SDWebImage/Core (5.10.2)
+  - ZBWCategories (0.1.7):
+    - SDWebImage
+    - "ZBWCategories/NSFoundation+ZBWCategory (= 0.1.7)"
+    - "ZBWCategories/UIKit+ZBWCategory (= 0.1.7)"
+    - ZBWJson
+  - "ZBWCategories/NSFoundation+ZBWCategory (0.1.7)":
+    - SDWebImage
+    - "ZBWCategories/NSFoundation+ZBWCategory/NSObject+ZBWCategory (= 0.1.7)"
+    - ZBWJson
+  - "ZBWCategories/NSFoundation+ZBWCategory/NSObject+ZBWCategory (0.1.7)":
+    - SDWebImage
+    - ZBWJson
+  - "ZBWCategories/UIKit+ZBWCategory (0.1.7)":
+    - SDWebImage
+    - ZBWJson
+  - ZBWJson (0.0.7)
+  - ZBWMacroDefine/biz (0.1.4):
+    - ZBWMacroDefine/common
+  - ZBWMacroDefine/common (0.1.4)
+  - ZBWUISignal (0.0.1)
+
+DEPENDENCIES:
+  - Common-iOS (from `../Common-iOS`)
+  - libwebp (= 0.6.1)
+  - MJRefresh (~> 3.1.12)
+  - SDWebImage
+  - ZBWCategories (~> 0.1.7)
+  - ZBWUISignal
+
+SPEC REPOS:
+  "git@gitlab.91chengguo.com:component-iOS/specs.git":
+    - ZBWMacroDefine
+  https://github.com/CocoaPods/Specs.git:
+    - libwebp
+    - MJRefresh
+    - SDWebImage
+    - ZBWCategories
+    - ZBWJson
+    - ZBWUISignal
+
+EXTERNAL SOURCES:
+  Common-iOS:
+    :path: "../Common-iOS"
+
+SPEC CHECKSUMS:
+  Common-iOS: 53107f5b82cf18d5f7a2a998b11ce66890053392
+  libwebp: 0f01098c6c17175391af621b2f14150f3ca16e16
+  MJRefresh: ee5b68f639775462faba4db0fd243baf4d42c2cf
+  SDWebImage: b969dcfc02c40a5da71eac0b03b8f1a0c794a86f
+  ZBWCategories: 1b6c811d37cf02a4d83d36a4cc1913f87faf74fb
+  ZBWJson: ae7f2d44877ea347c48d6714bfc4704129adedd4
+  ZBWMacroDefine: 07e0c7200686f875e6ba2a98b8b94ca792536a7c
+  ZBWUISignal: 88ca740af822efc938d1d6f00e8c0970bea0f2bc
+
+PODFILE CHECKSUM: ee9716c2ff5b0f75412fbdcdd4e477130b5bda03
+
+COCOAPODS: 1.8.3
