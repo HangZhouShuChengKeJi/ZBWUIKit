@@ -3,15 +3,11 @@
 # Uncomment this line if you're using Swift
 # use_frameworks!
 
-source 'git@gitlab.91chengguo.com:component-iOS/specs.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'ZBWUIKit' do
-#	pod 'SDWebImage'
-#	pod 'libwebp', '0.6.1'
 	pod 'MJRefresh', '~> 3.1.12'
-	pod 'ZBWCategories', '~> 0.1.7'
+	pod 'ZBWCategories', '~> 0.1.8'
     pod 'ZBWUISignal'
-#	pod 'Common-iOS', :path => "../Common-iOS"
 end
 

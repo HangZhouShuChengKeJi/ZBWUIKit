@@ -19,28 +19,50 @@ PODS:
     - SDWebImage
     - ZBWJson
   - ZBWJson (0.0.11)
+  - ZBWUIKit (0.2.1):
+    - MJRefresh (~> 3.1.12)
+    - ZBWCategories (~> 0.1.8)
+    - ZBWUIKit/Category (= 0.2.1)
+    - ZBWUIKit/CustomViews (= 0.2.1)
+    - ZBWUIKit/ViewControllers (= 0.2.1)
+    - ZBWUISignal
+  - ZBWUIKit/Category (0.2.1):
+    - MJRefresh (~> 3.1.12)
+    - ZBWCategories (~> 0.1.8)
+    - ZBWUISignal
+  - ZBWUIKit/CustomViews (0.2.1):
+    - MJRefresh (~> 3.1.12)
+    - ZBWCategories (~> 0.1.8)
+    - ZBWUISignal
+  - ZBWUIKit/ViewControllers (0.2.1):
+    - MJRefresh (~> 3.1.12)
+    - ZBWCategories (~> 0.1.8)
+    - ZBWUISignal
   - ZBWUISignal (0.0.1)
 
 DEPENDENCIES:
-  - MJRefresh (~> 3.1.12)
-  - ZBWCategories (~> 0.1.8)
-  - ZBWUISignal
+  - ZBWUIKit (from `../`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - MJRefresh
     - SDWebImage
     - ZBWCategories
     - ZBWJson
     - ZBWUISignal
 
+EXTERNAL SOURCES:
+  ZBWUIKit:
+    :path: "../"
+
 SPEC CHECKSUMS:
   MJRefresh: ee5b68f639775462faba4db0fd243baf4d42c2cf
   SDWebImage: 53179a2dba77246efa8a9b85f5c5b21f8f43e38f
   ZBWCategories: 437272594c663c5fdd6045b4a2895a00c1aec704
   ZBWJson: 500456abe901e9756f8290e64e63ba1dd9cb70bb
+  ZBWUIKit: 95448c67a0f69d13420c92d07b4f8af0ab226f6c
   ZBWUISignal: 88ca740af822efc938d1d6f00e8c0970bea0f2bc
 
-PODFILE CHECKSUM: 5d6d241e0f9ffea78e7571e3d63568abf51650d8
+PODFILE CHECKSUM: 2df4feb2a1346f0dbfac02672b0efa97bc9a68e1
 
 COCOAPODS: 1.11.2
