@@ -24,3 +24,4 @@ FOUNDATION_EXPORT const unsigned char ZBWUIKitVersionString[];
 
 #import "ZBWUIKit+Category.h"
 #import "ZBWCustomViews.h"
+#import <ZBWCategories/ZBWCategories.h>

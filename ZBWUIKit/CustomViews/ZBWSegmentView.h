@@ -23,6 +23,7 @@ typedef NS_ENUM(NSInteger, ZBWSegmentItemDisplayType) {
 
 @protocol ZBWSegmentItemProtocol <NSObject>
 
+@optional
 - (UIView *)customView;
 
 - (void)segmentItem:(ZBWSegmentItem *)item containerFrameChanged:(CGRect)rect;

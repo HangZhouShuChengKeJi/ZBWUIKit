@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "ZBWLoadingView.h"
 
-#define LV_DefaultOffsetY      kZBW_PHONE_ADAPTER(-10, -30, -40, -50)
-
 @interface UIView (ZBWLoadingView)
 
 @property (nonatomic) UILabel *zbw_lv_tipLabel;

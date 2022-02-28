@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   s.name         = "ZBWUIKit"
   s.version      = "0.2.1"
-  s.summary      = "A short description of ZBWUIKit."
+  s.summary      = "响应链上获取指定的vc。标签控件、格网控件等等"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -41,7 +41,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "7.0"
 
-  s.source_files  = "ZBWUIKit", "ZBWUIKit/*.{h,m,mm}"
+  s.source_files  = "ZBWUIKit", "ZBWUIKit/*.{h,m,mm}" ,"ZBWUIKit/**/*.{h,m,mm}"
 
   s.prefix_header_file = "ZBWUIKit/ZBWUIKit-prefix.pch"
 
@@ -49,17 +49,20 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = "Classes/**/*.h"
 
-  s.subspec 'CustomViews' do |coustomviewsSpec|
-    coustomviewsSpec.source_files = "ZBWUIKit/CustomViews/**/*.{h,m,mm}"
-  end
+  # s.subspec 'CustomViews' do |coustomviewsSpec|
+  #   coustomviewsSpec.source_files = "ZBWUIKit/CustomViews/**/*.{h,m,mm}"
+  # end
 
-  s.subspec 'ViewControllers' do |viewControllersSpec|
-    viewControllersSpec.source_files = "ZBWUIKit/ViewControllers/**/*.{h,m,mm}"
-  end
+  # s.subspec 'ViewControllers' do |viewControllersSpec|
+  #   viewControllersSpec.source_files = "ZBWUIKit/ViewControllers/**/*.{h,m,mm}"
+  # end
 
-  s.subspec 'Category' do |categoryS|
-    categoryS.source_files = "ZBWUIKit/Category/*.*","ZBWUIKit/Category/**/*.{h,m,mm}"
-  end
+  # s.subspec 'Category' do |categoryS|
+  #   categoryS.source_files = "ZBWUIKit/Category/*.*","ZBWUIKit/Category/**/*.{h,m,mm}"
+  # end
+
+  # s.requires_arc = true
+  # s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -74,7 +77,7 @@ Pod::Spec.new do |s|
   # s.libraries = "iconv", "xml2"
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "ZBWCategories"
+  s.dependency "ZBWCategories", '~> 0.1.8'
   s.dependency 'MJRefresh', '~> 3.1.12'
   s.dependency 'ZBWUISignal'
 

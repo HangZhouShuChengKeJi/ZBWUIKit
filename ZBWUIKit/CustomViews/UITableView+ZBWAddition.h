@@ -29,7 +29,7 @@ typedef NS_ENUM(NSInteger, ZBWTableEmptyState) {
     ZBWTableEmptyState_Requesting
 };
 
-typedef void(^ZBWTableViewEmptyStateChangeBlock)(int oldState, int newState, UIView *emptyView);
+typedef void(^ZBWTableViewEmptyStateChangeBlock)(NSInteger oldState, NSInteger newState, UIView *emptyView);
 
 @interface UITableView (ZBWAddition_EmptyView)
 
