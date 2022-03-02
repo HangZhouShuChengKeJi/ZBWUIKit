@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZBWUIKit"
-  s.version      = "0.2.3"
+  s.version      = "0.2.4"
   s.summary      = "响应链上获取指定的vc。标签控件、格网控件等等"
 
   # This description is used to generate tags and improve search results.
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   s.dependency "ZBWCategories", '~> 0.1.8'
-  s.dependency 'MJRefresh', '~> 3.1.12'
+  s.dependency 'MJRefresh', '~> 3.5.0'
   s.dependency 'ZBWUISignal'
 
 end
