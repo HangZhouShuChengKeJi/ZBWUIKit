@@ -104,7 +104,7 @@ const void *UIViewController_ZBWSegmentIndex_Key = &UIViewController_ZBWSegmentI
     if (!identifier) {
         return nil;
     }
-    NSLog(@"获取复用VC, identify [ %@ ]", identifier);
+//    NSLog(@"获取复用VC, identify [ %@ ]", identifier);
     return [[self reusableVCSet:identifier] anyObject];
 }
 
@@ -140,7 +140,7 @@ const void *UIViewController_ZBWSegmentIndex_Key = &UIViewController_ZBWSegmentI
 #pragma mark 载入载出
 - (void)setViewController:(UIViewController *)vc atIndex:(NSInteger)index
 {
-    NSLog(@"添加vc到UI, index: [ %ld ], identify: [ %@ ]", (long)index, vc.zbw_segmentIdentify);
+//    NSLog(@"添加vc到UI, index: [ %ld ], identify: [ %@ ]", (long)index, vc.zbw_segmentIdentify);
     if (!vc.parentViewController) {
         [self addChildViewController:vc];
         [self.scrollView addSubview:vc.view];
@@ -252,7 +252,7 @@ const void *UIViewController_ZBWSegmentIndex_Key = &UIViewController_ZBWSegmentI
 
 - (UIViewController *)vcAtIndex:(NSInteger)index
 {
-    NSLog(@"获取VC, index [ %ld ]", (long)index);
+//    NSLog(@"获取VC, index [ %ld ]", (long)index);
     UIViewController *vc = self.usingVCMap[@(index)];
     if (!vc) {
         vc = [self.dataSource segmentVC:self vcForIndex:index];
@@ -267,7 +267,7 @@ const void *UIViewController_ZBWSegmentIndex_Key = &UIViewController_ZBWSegmentI
 {
     // 添加到“复用”缓存中
     NSString *identify = vc.zbw_segmentIdentify;
-    NSLog(@"加入到 复用 Map中，index [ %ld ] identify [ %@ ]", (long)vc.zbw_segmentIndex, identify);
+//    NSLog(@"加入到 复用 Map中，index [ %ld ] identify [ %@ ]", (long)vc.zbw_segmentIndex, identify);
     if (identify) {
         [[self reusableVCSet:identify] addObject:vc];
     }
@@ -286,7 +286,7 @@ const void *UIViewController_ZBWSegmentIndex_Key = &UIViewController_ZBWSegmentI
 - (void)addToUsingMap:(UIViewController *)vc
 {
     NSString *identify = vc.zbw_segmentIdentify;
-    NSLog(@"加入到using Map中，index [ %ld ] identify [ %@ ]", (long)vc.zbw_segmentIndex, identify);
+//    NSLog(@"加入到using Map中，index [ %ld ] identify [ %@ ]", (long)vc.zbw_segmentIndex, identify);
     // 添加的到“正在使用”
     self.usingVCMap[@(vc.zbw_segmentIndex)] = vc;
     // 从“复用”中删除
@@ -297,7 +297,7 @@ const void *UIViewController_ZBWSegmentIndex_Key = &UIViewController_ZBWSegmentI
 
 - (void)showIndexs:(NSArray *)indexs
 {
-    NSLog(@"showIndexs : %@", indexs);
+//    NSLog(@"showIndexs : %@", indexs);
     if (!self.dontCleanOtherVC) {
         // 清理正在显示的VC
         [self.usingVCMap enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {

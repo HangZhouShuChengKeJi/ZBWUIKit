@@ -44,7 +44,7 @@
 
 - (id)initWithFrame:(CGRect)frame
 {
-    NSLog(@"%s", __func__);
+//    NSLog(@"%s", __func__);
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor whiteColor];

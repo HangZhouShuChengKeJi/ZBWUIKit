@@ -84,7 +84,7 @@
         }
     }
     
-    NSLog(@"pageableGridView 获取复用队列数据 %ld , %p", (long)index, gridView);
+//    NSLog(@"pageableGridView 获取复用队列数据 %ld , %p", (long)index, gridView);
     return gridView;
 }
 
@@ -138,7 +138,7 @@
     [self.reusableGridViewList addObject:gridView];
     [self.usingGridViewMap removeObjectForKey:@(index)];
     
-    NSLog(@"pageableGridView 加入到复用队列 %ld , %p", (long)index, gridView);
+//    NSLog(@"pageableGridView 加入到复用队列 %ld , %p", (long)index, gridView);
 }
 
 - (void)showIndexs:(NSArray *)indexs force:(BOOL)isForce {
