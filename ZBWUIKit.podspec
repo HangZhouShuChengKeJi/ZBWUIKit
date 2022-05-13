@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZBWUIKit"
-  s.version      = "0.2.4"
+  s.version      = "0.2.6"
   s.summary      = "响应链上获取指定的vc。标签控件、格网控件等等"
 
   # This description is used to generate tags and improve search results.

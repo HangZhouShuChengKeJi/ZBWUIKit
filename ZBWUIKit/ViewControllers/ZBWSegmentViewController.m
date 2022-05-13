@@ -213,11 +213,11 @@ const void *UIViewController_ZBWSegmentIndex_Key = &UIViewController_ZBWSegmentI
 }
 
 - (void)updateUI {
-    self.segmentControl.frame = CGRectMake(0, kTX_Segment_Y + self.offsetY, CGRectGetWidth(self.view.bounds), self.heightOfSegmentView);
+    self.segmentControl.frame = CGRectMake(self.segmentViewOffsetX, kTX_Segment_Y + self.offsetY, CGRectGetWidth(self.view.bounds) - self.segmentViewOffsetX * 2, self.heightOfSegmentView);
     UIView *lineView = [self.segmentControl viewWithTag:1234];
     if (lineView) {
         CGRect rect = lineView.frame;
-        rect = CGRectMake(0, self.heightOfSegmentView - rect.size.height, CGRectGetWidth(self.view.bounds), rect.size.height);
+        rect = CGRectMake(0, self.heightOfSegmentView - rect.size.height, CGRectGetWidth(self.segmentControl.frame), rect.size.height);
         lineView.frame = rect;
     }
     
@@ -338,7 +338,7 @@ const void *UIViewController_ZBWSegmentIndex_Key = &UIViewController_ZBWSegmentI
 - (ZBWSegmentView *)segmentControl
 {
     if (!_segmentControl) {
-        _segmentControl = [[ZBWSegmentView alloc] initWithFrame:CGRectMake(0, kTX_Segment_Y + self.offsetY, CGRectGetWidth(self.view.bounds), self.heightOfSegmentView)];
+        _segmentControl = [[ZBWSegmentView alloc] initWithFrame:CGRectMake(self.segmentViewOffsetX, kTX_Segment_Y + self.offsetY, CGRectGetWidth(self.view.bounds) - self.segmentViewOffsetX * 2, self.heightOfSegmentView)];
         _segmentControl.backgroundColor = self.bgColorOfSegmentView ? : [UIColor whiteColor];
         _segmentControl.selectionIndicatorColor = self.selectionIndicatorColor;
         _segmentControl.displayType = self.segmentItemDisplayType;

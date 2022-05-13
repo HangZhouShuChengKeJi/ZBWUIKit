@@ -47,7 +47,7 @@
 
 // 垂直偏移量
 @property (nonatomic, assign) float                                 offsetY; // segmentview 、scrollview整体垂直偏移
-
+@property (nonatomic, assign) float                                 segmentViewOffsetX; // segmentview 水平方向平移量。 segmentView.frame = (segmentViewOffsetX, 0, self.view.width - segmentViewOffsetX*2, heightOfSegmentView)
 
 - (UIViewController *)dequeueReusableVCWithIdentifier:(NSString *)identifier;
 
