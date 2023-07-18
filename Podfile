@@ -3,7 +3,7 @@
 # Uncomment this line if you're using Swift
 # use_frameworks!
 
-source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/CoderMJLee/MJRefresh.git'
 
 target 'ZBWUIKit' do
 	pod 'MJRefresh', '~> 3.7.5'
