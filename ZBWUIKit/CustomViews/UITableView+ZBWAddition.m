@@ -10,7 +10,7 @@
 #import <objc/runtime.h>
 
 #import "MJRefreshAutoNormalFooter.h"
-
+#import <MJRefresh.h>
 const void *UITableView_ZBWAddition_EmptyView_Key = &UITableView_ZBWAddition_EmptyView_Key;
 const void *UITableView_ZBWAddition_EmptyView_EmptyState_Key = &UITableView_ZBWAddition_EmptyView_EmptyState_Key;
 const void *UITableView_ZBWAddition_EmptyView_EmptyStateChange_Key = &UITableView_ZBWAddition_EmptyView_EmptyStateChange_Key;
