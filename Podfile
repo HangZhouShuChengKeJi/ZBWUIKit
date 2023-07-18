@@ -6,7 +6,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'ZBWUIKit' do
-	pod 'MJRefresh', '~> 3.1.12'
+	pod 'MJRefresh', '~> 3.7.5'
 	pod 'ZBWCategories', '~> 0.1.8'
     pod 'ZBWUISignal'
 end
