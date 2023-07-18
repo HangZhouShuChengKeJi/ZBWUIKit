@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/HangZhouShuChengKeJi/ZBWUIKit.git", :tag => "#{s.version}" }
 
-  s.platform     = :ios, "7.0"
+  s.platform     = :ios, "9.0"
 
   s.source_files  = "ZBWUIKit", "ZBWUIKit/*.{h,m,mm}" ,"ZBWUIKit/**/*.{h,m,mm}"
 
