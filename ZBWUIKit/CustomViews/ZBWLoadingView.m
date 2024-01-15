@@ -81,7 +81,10 @@
 //@property (nonatomic, strong)CAShapeLayer       *circleLayer1;
 //@property (nonatomic, strong)CAShapeLayer       *circleLayer2;
 
+<<<<<<< HEAD
 @property (nonatomic, strong) UIView *addAnimationBgVieww;
+=======
+>>>>>>> 3c6343af821b43682a196bb78a6a33bef332c7f0
 @property (nonatomic, strong) LOTAnimationView *addAnimation;
 
 @end
@@ -94,8 +97,12 @@
 + (ZBWLoadingView *)loadingInView:(UIView *)inView
 {
     ZBWLoadingView *loadingView = [ZBWLoadingView loadingView];
+<<<<<<< HEAD
     [loadingView addSubview:loadingView.addAnimationBgVieww];
     
+=======
+    [loadingView addSubview:loadingView.addAnimation];
+>>>>>>> 3c6343af821b43682a196bb78a6a33bef332c7f0
     CGRect rect = inView.bounds;
     loadingView.center = CGPointMake(CGRectGetMidX(rect), CGRectGetMidY(rect));
     [inView addSubview:loadingView];
@@ -178,7 +185,11 @@
 
 - (void)clean
 {
+<<<<<<< HEAD
     [self.addAnimationBgVieww addSubview:self.addAnimation];
+=======
+    
+>>>>>>> 3c6343af821b43682a196bb78a6a33bef332c7f0
     [self.addAnimation stop];
 
 //    if (_animationLayer)
@@ -204,7 +215,10 @@
 
 - (void)loading
 {
+<<<<<<< HEAD
     [self.addAnimationBgVieww addSubview:self.addAnimation];
+=======
+>>>>>>> 3c6343af821b43682a196bb78a6a33bef332c7f0
     [self.addAnimation play];
 
 //    if (!self.fgLineColor) {
@@ -319,6 +333,7 @@
 //    CGContextStrokePath(context);
 }
 
+<<<<<<< HEAD
 -(UIView *)addAnimationBgVieww{
     if (!_addAnimationBgVieww) {
         _addAnimationBgVieww = [[UIView alloc] init];
@@ -334,6 +349,12 @@
     if(!_addAnimation){
         _addAnimation = [LOTAnimationView animationNamed:@"animation_loading"];
         _addAnimation.frame = CGRectMake(ZBWLoadingView_Width/4.0, ZBWLoadingView_Width/4.0, ZBWLoadingView_Width/2.0, ZBWLoadingView_Width/2.0);
+=======
+-(LOTAnimationView *)addAnimation{
+    if(!_addAnimation){
+        _addAnimation = [LOTAnimationView animationNamed:@"animation_loading"];
+        _addAnimation.frame = CGRectMake(0, 0, ZBWLoadingView_Width, ZBWLoadingView_Width);
+>>>>>>> 3c6343af821b43682a196bb78a6a33bef332c7f0
         _addAnimation.loopAnimation = YES;
     }
     return _addAnimation;
