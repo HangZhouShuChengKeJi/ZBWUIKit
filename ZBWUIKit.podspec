@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZBWUIKit"
-  s.version      = "0.2.9"
+  s.version      = "0.3.1"
   s.summary      = "响应链上获取指定的vc。标签控件、格网控件等等"
 
   # This description is used to generate tags and improve search results.
@@ -80,5 +80,6 @@ Pod::Spec.new do |s|
   s.dependency "ZBWCategories", '~> 0.1.8'
   s.dependency 'MJRefresh', '~> 3.7.5'
   s.dependency 'ZBWUISignal'
+  s.dependency 'lottie-ios-OC'
 
 end
