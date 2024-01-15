@@ -9,7 +9,7 @@
 #import "ZBWLoadingView.h"
 #import <Lottie/LOTAnimationView.h>
 #define ZBWLoadingView_LineWidth   6
-#define ZBWLoadingView_Width       40
+#define ZBWLoadingView_Width       80
 #define ZBWLoadingView_Duration    0.5
 
 #define ZBWLoadingView_rotationAngle   70
@@ -80,6 +80,7 @@
 //
 //@property (nonatomic, strong)CAShapeLayer       *circleLayer1;
 //@property (nonatomic, strong)CAShapeLayer       *circleLayer2;
+@property (nonatomic, strong) UIView *addAnimationBgVieww;
 
 @property (nonatomic, strong) LOTAnimationView *addAnimation;
 
@@ -93,7 +94,7 @@
 + (ZBWLoadingView *)loadingInView:(UIView *)inView
 {
     ZBWLoadingView *loadingView = [ZBWLoadingView loadingView];
-    [loadingView addSubview:loadingView.addAnimation];
+    [loadingView addSubview:loadingView.addAnimationBgVieww];
     CGRect rect = inView.bounds;
     loadingView.center = CGPointMake(CGRectGetMidX(rect), CGRectGetMidY(rect));
     [inView addSubview:loadingView];
@@ -176,7 +177,7 @@
 
 - (void)clean
 {
-    
+    [self.addAnimationBgVieww addSubview:self.addAnimation];
     [self.addAnimation stop];
 
 //    if (_animationLayer)
@@ -202,6 +203,7 @@
 
 - (void)loading
 {
+    [self.addAnimationBgVieww addSubview:self.addAnimation];
     [self.addAnimation play];
 
 //    if (!self.fgLineColor) {
@@ -316,10 +318,22 @@
 //    CGContextStrokePath(context);
 }
 
+-(UIView *)addAnimationBgVieww{
+    if (!_addAnimationBgVieww) {
+        _addAnimationBgVieww = [[UIView alloc] init];
+        _addAnimationBgVieww.backgroundColor = UIColor.blackColor;
+        _addAnimationBgVieww.frame = CGRectMake(0, 0, ZBWLoadingView_Width, ZBWLoadingView_Width);
+        _addAnimationBgVieww.backgroundColor = UIColor.blackColor;
+        _addAnimationBgVieww.layer.cornerRadius = 8;
+        [_addAnimationBgVieww addSubview:self.addAnimation];
+    }
+    return _addAnimationBgVieww;
+}
+
 -(LOTAnimationView *)addAnimation{
     if(!_addAnimation){
         _addAnimation = [LOTAnimationView animationNamed:@"animation_loading"];
-        _addAnimation.frame = CGRectMake(0, 0, ZBWLoadingView_Width, ZBWLoadingView_Width);
+        _addAnimation.frame = CGRectMake(ZBWLoadingView_Width/4.0, ZBWLoadingView_Width/4.0, ZBWLoadingView_Width/2.0, ZBWLoadingView_Width/2.0);
         _addAnimation.loopAnimation = YES;
     }
     return _addAnimation;

@@ -81,7 +81,7 @@ static const void *UIView$ZBWLVNSOperation_Key                         = &UIView
         
         if (!self.zbw_lv_bgView) {
             self.zbw_lv_bgView = [[UIView alloc] init];
-            self.zbw_lv_bgView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:.6];
+            self.zbw_lv_bgView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:1];
             self.zbw_lv_bgView.layer.cornerRadius = 6;
             self.zbw_lv_bgView.layer.masksToBounds = YES;
             
