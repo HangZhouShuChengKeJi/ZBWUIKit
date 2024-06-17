@@ -64,7 +64,18 @@ typedef NS_ENUM(NSInteger, ZBWTagItemViewLineStyle) {
 @property (nonatomic, assign) NSRange       searchHightlightRange;
 
 @property (nonatomic, copy) NSString              *title;
+//默认 UIEdgeInsetsMake(5, 5, 5, 5) 外边距， label 与 ZBWTagItemView 的边距
 @property (nonatomic, assign) UIEdgeInsets  padding;
+
+//指定宽度，如果大于0 使用指定的宽度， 否则使用默认值（自动计算得到的值）
+@property (nonatomic, assign) CGFloat  itemWidth;
+@property (nonatomic, assign) CGFloat  itemHeight;
+
+//指定最大宽度，如果大于0，则最大宽度不能超过这个宽度
+@property (nonatomic, assign) CGFloat  maxWidth;
+//设置title 最大显示字数，如果大于0 超出的显示..
+@property (nonatomic, assign) CGFloat  maxTitleCount;
+
 
 // 状态回调
 //@property (nonatomic, copy) ZBWTagItemViewSelectedChangedBlock selectedChangeBlock;

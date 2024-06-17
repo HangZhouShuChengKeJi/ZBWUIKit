@@ -62,6 +62,10 @@ const void *ZBWTagItemView_Identify_Key = &ZBWTagItemView_Identify_Key;
 - (instancetype)initWithIdentify:(NSString *)identify {
     if (self = [super init]) {
         self.padding = UIEdgeInsetsMake(5, 5, 5, 5);
+        self.itemWidth = 0;
+        self.itemHeight = 0;
+        self.maxWidth = 0 ;
+        self.maxTitleCount = 0;
         self.selectedBgColor = [UIColor orangeColor];
         self.selectedTextColor = [UIColor whiteColor];
         self.selectedFont = [UIFont systemFontOfSize:13];
@@ -128,7 +132,12 @@ const void *ZBWTagItemView_Identify_Key = &ZBWTagItemView_Identify_Key;
 
 - (void)setTitle:(NSString *)title {
     _title = title;
-    [self.contentBtn setTitle:title forState:UIControlStateNormal];
+    NSString *displayTitle = title;
+    if (self.maxTitleCount > 0 && title.length >self.maxTitleCount) {
+        NSRange range = NSMakeRange(0, self.maxTitleCount);
+        displayTitle = [NSString stringWithFormat:@"%@..",[title substringWithRange:range]] ;
+    }
+    [self.contentBtn setTitle:displayTitle forState:UIControlStateNormal];
     
 //    [self updateUI];
 }
@@ -209,6 +218,15 @@ const void *ZBWTagItemView_Identify_Key = &ZBWTagItemView_Identify_Key;
     aSize.width += 10*2;
     aSize.height += (self.padding.top + self.padding.bottom);
     aSize.width += (self.padding.left + self.padding.right);
+    if (self.maxWidth >0 && aSize.width > self.maxWidth) {
+        aSize.width = self.maxWidth;
+    }
+    if (self.itemWidth > 0) {
+        aSize.width = self.itemWidth;
+    }
+    if (self.itemHeight > 0) {
+        aSize.height = self.itemHeight;
+    }
     return aSize;
 }
 
