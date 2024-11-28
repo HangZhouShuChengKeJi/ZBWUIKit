@@ -8,7 +8,7 @@
 
 #import "ZBWTagItemView.h"
 #import <objc/runtime.h>
-
+#import "ZBWMarqueeView.h"
 const void *ZBWTagItemView_Identify_Key = &ZBWTagItemView_Identify_Key;
 
 
@@ -53,6 +53,7 @@ const void *ZBWTagItemView_Identify_Key = &ZBWTagItemView_Identify_Key;
 
 @property (nonatomic) CAShapeLayer      *shapeLayer;
 @property (nonatomic) UIButton          *contentBtn;
+@property (nonatomic) ZBWMarqueeView          *contentMarqueeView;
 @property (nonatomic) ZBWTagDeleteView      *defaultDeleteView; // 删除
 
 @end
@@ -79,6 +80,7 @@ const void *ZBWTagItemView_Identify_Key = &ZBWTagItemView_Identify_Key;
         objc_setAssociatedObject(self, ZBWTagItemView_Identify_Key, identify, OBJC_ASSOCIATION_COPY);
     }
     [self addSubview:self.contentBtn];
+    [self addSubview:self.contentMarqueeView];
     self.frame = CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 40);
     
     self.style = _style;
@@ -107,6 +109,7 @@ const void *ZBWTagItemView_Identify_Key = &ZBWTagItemView_Identify_Key;
     CGRect rect = CGRectMake(self.padding.left, self.padding.top, self.width - self.padding.left - self.padding.right, self.height - self.padding.top - self.padding.bottom);
     
     self.contentBtn.frame = rect;
+    self.contentMarqueeView.frame = rect;
     _defaultDeleteView.right = self.bounds.size.width;
     self.style = _style;
     
@@ -138,7 +141,7 @@ const void *ZBWTagItemView_Identify_Key = &ZBWTagItemView_Identify_Key;
         displayTitle = [NSString stringWithFormat:@"%@..",[title substringWithRange:range]] ;
     }
     [self.contentBtn setTitle:displayTitle forState:UIControlStateNormal];
-    
+    [self.contentMarqueeView updateTitle:displayTitle];
 //    [self updateUI];
 }
 
@@ -194,6 +197,7 @@ const void *ZBWTagItemView_Identify_Key = &ZBWTagItemView_Identify_Key;
         return;
     }
     _isSelected = isSelected;
+    self.contentMarqueeView.titleLoop = isSelected;
 //    [self updateUI];
 //    self.selectedChangeBlock ? self.selectedChangeBlock(_isSelected, self) : nil;
 }
@@ -259,6 +263,13 @@ const void *ZBWTagItemView_Identify_Key = &ZBWTagItemView_Identify_Key;
         
         self.contentBtn.titleLabel.attributedText = attrStr;
     }
+    //添加字体循环
+    [self.contentMarqueeView updateTitleFont:self.normalFont];
+    [self.contentMarqueeView updateTitleColor:self.normalTextColor];
+    self.contentMarqueeView.titleLoop = NO;
+    [self.contentBtn setTitleColor:[UIColor clearColor] forState:UIControlStateNormal];
+    
+
     
 //    if (self.searchHightlightRange.length > 0 && self.searchHighlightTextColor && _title.length > 0) {
 //        NSMutableAttributedString *attrStr = [[NSMutableAttributedString alloc] initWithString:_title];
@@ -296,6 +307,13 @@ const void *ZBWTagItemView_Identify_Key = &ZBWTagItemView_Identify_Key;
         self.contentBtn.titleLabel.attributedText = [[NSAttributedString alloc] initWithString:_title];
 //        self.contentBtn.titleLabel.attributedText = nil;
     }
+    //添加字体循环
+    [self.contentMarqueeView updateTitleFont:self.selectedFont];
+    [self.contentMarqueeView updateTitleColor:self.selectedTextColor];
+    self.contentMarqueeView.titleLoop = YES;
+    [self.contentBtn setTitleColor:[UIColor clearColor] forState:UIControlStateNormal];
+    
+
 }
 
 
@@ -334,6 +352,16 @@ const void *ZBWTagItemView_Identify_Key = &ZBWTagItemView_Identify_Key;
     }
     return _contentBtn;
 }
+
+- (ZBWMarqueeView *)contentMarqueeView{
+    if(!_contentMarqueeView){
+        _contentMarqueeView = [ZBWMarqueeView marqueeBarWithFrame:CGRectMake(0, 0, 0, 0) title:@"" font:self.selectedFont];
+        _contentMarqueeView.backgroundColor = [UIColor clearColor];
+        _contentMarqueeView.userInteractionEnabled = NO;
+    }
+    return _contentMarqueeView;
+}
+
 
 - (ZBWTagDeleteView *)defaultDeleteView {
     if (!_defaultDeleteView) {
