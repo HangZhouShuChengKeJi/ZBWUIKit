@@ -7,7 +7,6 @@
 
 #import "ZBWImageTagItemView.h"
 #import <objc/runtime.h>
-
 @interface ZBWImageTagItemView ()
 
 @property (nonatomic) UIImageView   *imageView;
