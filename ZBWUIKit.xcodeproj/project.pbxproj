@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		429033A72CF801A000530906 /* ZBWMarqueeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 429033A62CF801A000530906 /* ZBWMarqueeView.m */; };
 		8C113E822249DCFD00E26866 /* ZBWUIKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8C113E7F2249DCFD00E26866 /* ZBWUIKit.h */; };
 		8C113EBB2249DDED00E26866 /* UIResponder+ZBWStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113E8A2249DDED00E26866 /* UIResponder+ZBWStack.m */; };
 		8C113EC02249DDED00E26866 /* UIView+ZBWLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113E982249DDED00E26866 /* UIView+ZBWLoadingView.m */; };
@@ -43,8 +42,6 @@
 
 /* Begin PBXFileReference section */
 		0EB0BCBF3D5FA5EC511F886D /* Pods-ZBWUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBWUIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZBWUIKit/Pods-ZBWUIKit.release.xcconfig"; sourceTree = "<group>"; };
-		429033A52CF801A000530906 /* ZBWMarqueeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBWMarqueeView.h; sourceTree = "<group>"; };
-		429033A62CF801A000530906 /* ZBWMarqueeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBWMarqueeView.m; sourceTree = "<group>"; };
 		7036C14F00FAC0F54F3B0A2C /* libPods-ZBWUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZBWUIKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C113E7C2249DCFD00E26866 /* libZBWUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZBWUIKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C113E7F2249DCFD00E26866 /* ZBWUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBWUIKit.h; sourceTree = "<group>"; };
@@ -188,8 +185,6 @@
 		8C113EAE2249DDED00E26866 /* TagView */ = {
 			isa = PBXGroup;
 			children = (
-				429033A52CF801A000530906 /* ZBWMarqueeView.h */,
-				429033A62CF801A000530906 /* ZBWMarqueeView.m */,
 				8CABC13A27C8D3830034CAE6 /* ZBWImageTagItemView.h */,
 				8CABC13B27C8D3830034CAE6 /* ZBWImageTagItemView.m */,
 				8CABC13C27C8D3830034CAE6 /* ZBWTagItemView.h */,
@@ -330,7 +325,6 @@
 				8C113EC12249DDED00E26866 /* ZBWLoadingView.m in Sources */,
 				8C113EC62249DDED00E26866 /* ZBWGridView.m in Sources */,
 				8C113EC02249DDED00E26866 /* UIView+ZBWLoadingView.m in Sources */,
-				429033A72CF801A000530906 /* ZBWMarqueeView.m in Sources */,
 				8C113ECC2249DDED00E26866 /* UITableView+ZBWAddition.m in Sources */,
 				8CABC13F27C8D3830034CAE6 /* ZBWTagItemView.m in Sources */,
 				8C113EC72249DDED00E26866 /* ZBWGridCellButton.m in Sources */,
