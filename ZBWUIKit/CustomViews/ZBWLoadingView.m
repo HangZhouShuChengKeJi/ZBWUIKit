@@ -332,9 +332,15 @@
 
 -(LOTAnimationView *)addAnimation{
     if(!_addAnimation){
-        _addAnimation = [LOTAnimationView animationNamed:@"animation_loading"];
-        _addAnimation.frame = CGRectMake(ZBWLoadingView_Width/4.0, ZBWLoadingView_Width/4.0, ZBWLoadingView_Width/2.0, ZBWLoadingView_Width/2.0);
-        _addAnimation.loopAnimation = YES;
+        @try {
+            _addAnimation = [LOTAnimationView animationNamed:@"animation_loading"];
+            _addAnimation.frame = CGRectMake(ZBWLoadingView_Width/4.0, ZBWLoadingView_Width/4.0, ZBWLoadingView_Width/2.0, ZBWLoadingView_Width/2.0);
+            _addAnimation.loopAnimation = YES;
+        } @catch (NSException *exception) {
+            NSLog(@"LOTAnimationView 初始化失败: %@", exception);
+            _addAnimation = nil; // 这里可以选择不创建动画，防止崩溃
+        }
+        
     }
     return _addAnimation;
 }
